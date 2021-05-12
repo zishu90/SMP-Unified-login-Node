@@ -1,0 +1,59 @@
+﻿<div class="col-lg-8 col-md-8 left-side" >
+    <div style="text-align: center; color: #fff;">
+        <div class="SEC-logo">
+          <img src="assets/SMClogo white.png" alt="" width="20%"> 
+          <span></span>
+          <img src="assets/SEC_Logo_White.png" alt="" width="20%">
+        </div>
+      <h3 style="margin-bottom: 0px;">Welcome to</h3>
+      <h2 >Smart Meter Monitoring System</h2>
+   </div>
+</div>
+<div class="col-md-4 col-lg-4 right-side">
+   
+    <div class="center-block">
+        <h4 class="card-header">Login</h4>
+        <div class="card-body">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="form-group username-div">
+                    <!-- <label for="username">Username</label> -->
+                    <input type="text" formControlName="username" placeholder="User name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+                    <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                        <div *ngIf="f.username.errors.required">Username is required</div>
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <!-- <label for="password" >Password</label> -->
+                    <input type="password" formControlName="password" placeholder="Password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                    <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                        <div *ngIf="f.password.errors.required">Password is required</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="remember-me">
+                        <input type="checkbox" name="remember" id="">
+                        Remember me
+                    </div> 
+                    <div class="forgot-pass" (click)="$event.preventDefault(); openDialog()">
+                        Forgot Password?
+                    </div>
+                </div>
+                
+                <div class="login-btn">
+                    <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary">
+                        <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                        Login
+                    </button>
+                </div>
+                <div class="register" (click)="$event.preventDefault(); openDialog()">
+                    <!-- <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span> -->
+                    New user? Contact Admin
+                </div>
+                <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
+            </form>
+        </div>
+    </div>
+    
+    
+</div>            
+

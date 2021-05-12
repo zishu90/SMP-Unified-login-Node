@@ -1,0 +1,91 @@
+﻿
+<div class="inner-header">
+      <div class="nav-item-smp" ><img src="assets/logo_smp.jpg" alt="" width="100%"> </div>
+      <span></span>
+      <h2 >SMART METER OPERATIONS CENTER</h2>
+      <div class="nav-item-sec" ><img src="assets/logo_sec.png" alt="" width="100%"></div>
+</div>
+<div class="main-content">
+    <div class="welcome-header" style="border: 1px solid #80808024; background-color: #F8F8F8;">
+        <h4  *ngIf="userFromApi">Welcome <span>{{userFromApi.firstName}}</span></h4>
+        <div class="exit"  (click)="exit()" >Logout</div> 
+        <div class="manage-profile" > Manage Profile</div> 
+    </div>
+      
+    <div class="option-select"> Please select option below to proceed</div>
+    <!-- <div  class="package-main">
+       <div class="package-div">
+           <h2>Package A</h2>
+           <ul>
+               <li>SGCC-HES</li>
+               <li>MAF-HES</li>
+               <li>SGCC-WFMS</li>
+               <li>SGCC-WFMS</li>
+           </ul>
+       </div>
+       <div class="package-div" style="margin:0% 5%">
+            <h2>Package B</h2>
+            <ul>
+                <li>MDMS</li>
+                <li>KMS</li>
+            </ul>
+      </div>
+      <div class="package-div">
+           <h2>Package C</h2>
+           <ul>
+               <li>Tableau Dashboard System</li>
+               <li>Trouble Ticketing System </li>
+               <li>Unified Fault Management System</li>
+               <li>Asset management System</li>
+               <li>Application Management System</li>
+               <li>Business Process Automation System</li>
+               <li>Clous Monitoring System</li>
+           </ul>
+       </div>
+    </div>  -->
+
+    <div class ="box-view">
+        <mat-tab-group>
+            <mat-tab label="Package A" class="package-tab-a">
+                <div class="block"> 
+                    SGCC-HES
+                </div>
+                <div class="block" style="margin: 0% 2%;"> 
+                    MAF-HES
+                </div>
+                <div class="block"> 
+                    SGCC-WFMS
+                </div>
+                <div class="block" style="margin-left:2%;"> 
+                    MAF-WFMS
+                </div>
+           </mat-tab>
+            <mat-tab label="Package B"> 
+                <div class="block"> 
+                    MDMS
+                </div>
+                <div class="block" style="margin: 0% 2%;"> 
+                    KMS
+                </div>
+                
+             </mat-tab>
+            <mat-tab label="Package C"> 
+                <div class="block"> 
+                    Tableau Dashboard System
+                </div>
+                <div class="block" style="margin: 0% 2%;"> 
+                    Trouble Ticketing System
+                </div>
+                <div class="block" > 
+                    Unified Fault Management System
+                </div>
+                <div class="block" style="margin-left: 2%;">Asset management System</div>
+                <div class="block" >Application Management System</div>
+                <div class="block" style="margin: 0% 2%;">Business Process Automation System</div>
+                <div class="block" >Clous Monitoring System</div>
+            </mat-tab>
+          </mat-tab-group>
+    </div>
+
+   
+</div>

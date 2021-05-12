@@ -1,0 +1,414 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    /* background-color: #1C4994; */
+}
+html, body
+{
+    width: 100%;
+    height: 100%;
+}
+.left-side{
+    display: inline-block;
+    background-color: #182C5E;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    overflow: auto;
+    background-image: url(assets/loginmap.png);
+    background-repeat: no-repeat;
+    background-position: center 80%;
+}
+.right-side{
+    display: inline-block;
+    background-color: #04204A;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+} 
+.inner-header{
+    background-color: #fff;
+    width: 100%;
+    display: inline-block;
+}
+.inner-header .nav-item-smp{
+    float: left;
+    width: 10%;
+    margin: 10px 20px;
+}
+.inner-header .nav-item-sec{
+    float: right;
+    margin: 15px 35px 0px 0px;
+    width: 13%;
+}
+.inner-header h2{
+    float: left;
+    font-size: 25px;
+    color: #1C4994;
+    padding: 32px 0px 0px 25px;
+}
+
+.inner-header span{
+    border-right: 1px solid #1C4994;
+    height: 50px;
+    float: left;
+    margin: 19px 6px 0px 6px;
+}
+
+select#sel1 {
+    color: #fcf8f8;
+    background-color: #1C4994;
+    border-color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 20px;
+    box-shadow: none;
+    border-radius: 5px;
+}
+.navbar-dark .nav-item{
+    color: #fff;
+    font-size: 22px;
+}
+.welcome-header{
+    border: 1px solid #80808024;
+    background-color: #F8F8F8;
+    box-shadow: 0px 1px #80808024;
+}
+
+.welcome-header h4{
+    font-size: 20px;
+    padding: 12px 0px 5px 28px;
+    border-radius: 0px;
+    font-weight: 300;
+    display: inline-block;
+}
+.welcome-header span{
+    font-weight: 500;
+    color: #5372AB;
+}
+.exit{
+  
+
+    float: right;
+    margin: 18px 10px 8px 5px;
+    width: 7%;
+    cursor: pointer;
+    background-image: url("assets/ico_logout_grey.png");
+    background-repeat: no-repeat;
+    height: 20px;
+    float: right;
+    padding: 0px 26px;
+    font-size: 17px;
+}
+
+
+.exit:hover{
+    color: #1C4994;
+    font-weight: 500;
+    background-image: url("assets/ico_logout_blue.png");
+}
+.manage-profile{
+    margin: 18px 0px 8px 0px;
+    width: 8%;
+    cursor: pointer;
+    background-image: url("assets/ico_setting_grey.png");
+    background-repeat: no-repeat;
+    height: 20px;
+    float: right;
+    padding: 0px 0px 0px 25px;
+    font-size: 17px;
+}
+
+.manage-profile:hover{
+    color: #1C4994;
+    background-image: url("assets/ico_setting_blue.png");
+}
+.manage-profile .img{
+    background-image: url("assets/ico_setting_grey.png");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    float: left;
+}
+.manage-profile .img:hover{
+    background-image: url("assets/ico_setting_blue.png");
+}
+
+.card{
+    background-color: inherit;
+    background-clip: border-box;
+    border: none;
+    border-radius: 0px;
+}
+.card-body{
+    padding: 0px;
+}
+.card-body ul{
+    background-color: #87ABE9;
+    list-style: decimal;
+    font-size: 25px;
+    color: #116AC3;
+    padding: 10px 10px 15px 45px;
+    text-decoration: underline;
+    margin: -1px 0px;
+}
+.card-body ul li {
+    margin: 5px 0px;
+}
+.form-group{
+    /* background-color: #87ABE9; */
+    /* border-radius: 0px;
+    padding: 8px 10px;
+    margin-bottom: 20px; */
+}
+label{
+    display: inline-block;
+    margin: 10px;
+    width: 25%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.username-div{
+    padding-bottom: 20px;
+}
+
+.form-control {
+    display: INLINE-BLOCK;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 0px 10px;
+    height: 45px;
+    font-size: 18px;
+}
+.forgot-pass{
+    text-align: right;
+    color: #B5BDCA;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+}
+.remember-me{
+display: inline-block;
+text-align: left;
+color: #B5BDCA;
+cursor: pointer;
+}
+.register{
+    text-align: center;
+    color: #B5BDCA;
+    cursor: pointer;
+}
+.login-btn{
+    text-align: center;
+    margin: 65px 0px 25px 0px;
+}
+.form-control:focus{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-primary , .btn-primary.focus, .btn-primary:focus, .btn-primary:hover, .btn-primary.disabled, .btn-primary:disabled{
+    color: #fcf8f8;
+    background-color: #F78F3A;
+    border-color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 20px;
+    box-shadow: none;
+    vertical-align: inherit;
+    width: 100%;
+}
+
+.center-block{
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 10%;
+}
+.SEC-logo{
+    margin: 60px 0px 20px 0px;
+}
+
+.SEC-logo span{
+    border-right: 1px solid #fff;
+    height: 70px;
+    display: inline-block;
+    margin: -35px 45px;
+}
+.option-select{
+    font-size: 18px;
+    margin: 18px 6px 12px 30px;
+}
+
+.main-content{
+    background-color: #F0F0F0;
+    position: fixed;
+    /* top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; */
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* dialog css start here */
+
+.mat-dialog-container{
+    padding: 0px 0px!important;
+    overflow: unset!important;
+}
+
+.mat-dialog-title{
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #1C4792;
+    font-weight: 100;
+    margin: 0px;
+}
+
+
+/* close */
+.call, .email{
+    width: 49%;
+    float: left;
+}
+.call h4, .email h4{
+    font-size: 25px;
+    margin: 15px 0px 40px 0px
+}
+.phone-img{
+    background-image: url("assets/ico_phone_grey.png");
+    background-repeat: no-repeat;
+    background-size: 7%;
+    background-position: center;
+    height: 50px;
+}
+.mail-img{
+    background-image: url("assets/ico_email_grey.png");
+    background-repeat: no-repeat;
+    background-size: 7%;
+    background-position: center;
+    height: 50px;
+}
+.call p{
+    font-size: 15px;
+}
+.email p{
+    font-size: 20px;
+    margin: 20px 0px 0px 0px;
+}
+
+.email p:hover{
+    color: #1C4792;
+    font-weight: 500;
+}
+
+/* .call img, .email img{
+    margin-bottom: 40px;
+} */
+
+.phone-img:hover{
+    background-image: url("assets/ico_phone_blue.png");
+}
+.mail-img:hover{
+    background-image: url("assets/ico_email_blue.png");
+}
+.mat-raised-button{
+    background-color:#F78F3A!important;
+    color: #fff  !important;
+    font-size: 18px;
+    padding: 12px 50px;
+    border: none;
+    margin: 20px 0px 30px 0px;
+    font-weight: 100;
+}
+
+.mat-dialog-content span{
+    border-right: 1px solid #211e1e33;
+    height: 170px;
+    float: left;
+    margin: 10px 0px;
+}
+button:focus{
+    outline: none!important;
+}
+.close-btn-dialog{
+    float: left;
+    width: 100%;
+}
+.package-main{
+    padding: 6%;
+    width: 100%;
+    float: left;
+}
+
+.package-main .package-div{
+    width: 30%;
+    float: left;
+}
+
+.package-main ul{
+    margin: 0px;
+    padding: 0px;
+}
+.package-main ul li{
+    list-style: none;
+    border-bottom: 1px solid #514d4d3b;
+    padding: 12px 12px 12px 0px;
+    font-size: 18px;
+   background-image: url('assets/ico_arrow_grey.png');
+   background-repeat: no-repeat;
+   background-position: right;
+}
+
+.package-main ul li:hover{
+    background-image: url('assets/ico_arrow_blue.png');
+    color: #1C4994;
+    font-weight: 500;
+}
+.mat-tab-label-content{
+    font-size: 22px;
+}
+ .mat-tab-label-active{
+    color: #1C4994;
+    font-size: 22px;
+}
+.mat-tab-body-content .block{
+    padding: 20px;
+    background-color: #fff;
+    width: 23.5%;
+    display: inline-block;
+    margin-top: 29px;
+    height: 120px;
+    font-size: 17px;
+    background-image: url('assets/ico_arrow_grey.png');
+    background-repeat: no-repeat;
+    background-position: 90% 80%;
+}
+
+.mat-tab-body-content .block:hover{
+    background-image: url('assets/ico_arrow_blue.png');
+    color: #1C4994;
+    font-weight: 500;
+}
+
+
+.box-view{
+    padding: 30px;
+}
